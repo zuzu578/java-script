@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <input type="button" name="color" onclick="change('black')"> 다크모드
+    <input type="button" name="color" 
+    onclick="change('white')"> 화이트모드
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+function change(color){
+  document.body.style.background=color;
+}
