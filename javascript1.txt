@@ -1,0 +1,5 @@
+var a3=10;
+var a4=3;
+
+var result4= a3<a4 ? "javascript" : "hello";
+document.write(result4)

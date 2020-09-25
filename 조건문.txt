@@ -1,0 +1,22 @@
+/*
+진영이의 하루 지출 내역: 교통비 3000원 식비 6000원 음료비 3000원.
+삼항조건 연산자를 사용하여 하루 적정 지출 비용인 1만원을 초과 했을 경우
+"000원 초과" 라고 출력하고 아닐경우, "지출 관리가 적절하다."라고 출력한다.
+*/
+
+var total = 10000
+
+var bus = 3000
+var food = 6000
+var baverage = 3000
+
+var use = (bus+food+baverage);
+
+var result1= total > use ? "2000원 초과" : "지출 관리가 적절하다."
+
+if(use>total){
+  document.write("2000원초과");
+}else{
+  document.write("지출관리 적절.");
+}
+ 
