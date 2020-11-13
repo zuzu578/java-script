@@ -1,16 +1,23 @@
-class Polygon{
+class Calculator{
   constructor(x,y){
-    this.name = 'lee';
     this.x = x;
     this.y = y;
-    this.sum =this.x+this.y;
+    this.sum = this.x+ this.y;
+    this.multi = this.x * this.y;
+    this.sub = this.x - this.y;
+    this.div = this.x - this.y;
   }
 }
-class Square extends Polygon{
+class Result extends Calculator{
   constructor(x,y){
     super(x,y);
-    this.name = "lee";
+    this.x = x;
+    this.y = y;
   }
 }
-var s1 = new Square(20,40);
-document.write(s1.sum);
+
+var c1 = new Result(20,10);
+document.write(c1.sum);
+document.write(c1.multi);
+document.write(c1.sub);
+document.write(c1.div);
